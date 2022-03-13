@@ -51,7 +51,11 @@ block content
 block main
   main
     .photo-scroll#photo-scroll
-      <img class="photo-main", src="img/photo/photo-main.png", alt="Фото" data-scroll-speed="1">
+      <picture>
+        <source srcset="img/photo/photo-main.webp" type="image/webp">
+        <source srcset="img/photo/photo-main.png" type="image/png">
+        <img class="photo-main", src="img/photo/photo-main.png", alt="Фото" data-scroll-speed="1">
+      </picture>
     .container
       h1.visually-hidden Ladies by Niko авторский курс хореографии в стиле high heels
       .button-block

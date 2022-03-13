@@ -22,6 +22,7 @@
 }
 
 .button {
+  z-index: 3;
   width: 200px;
   background-color: var(--bg-button);
   border: 0.125rem solid $button-color;
@@ -90,3 +91,9 @@
   .button:active a {
   color: var(--color-button-active);
   }
+
+@media (max-width: $table-width) {
+  .button {
+    z-index: 1;
+  }
+}
