@@ -2,15 +2,9 @@
   padding: 60px 0;
   padding-bottom: 90px;
   background-image: url("../img/decoration-lines-mobile-1.png"), url("../img/decoration-lines-mobile-2.png");
-  background-position: top left, bottom right;
   background-repeat: no-repeat;
+  background-position: top left, bottom right;
   background-size: 100%;
-}
-
-.about__title {
-  font-weight: 200;
-  font-size: 36px;
-  text-align: center;
 }
 
 .text-color-decor {
@@ -30,6 +24,7 @@
   z-index: 3;
   font-weight: 400;
   font-size: 16px;
+  font-family: NotoSerif, "Times New Roman", Times, serif;
   line-height: 22px;
   letter-spacing: 0.06em;
   text-indent: 16px;

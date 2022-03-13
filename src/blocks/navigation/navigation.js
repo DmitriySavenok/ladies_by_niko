@@ -3,6 +3,7 @@ var logo = document.getElementById("logo");
   var buttonOpen = document.getElementById("navigation-button-open");
   var buttonClose = document.getElementById("navigation-button-close");
   var navigatioList = document.querySelector(".navigation__list");
+  var navigatioBlock = document.querySelector(".navigation__block");
 
 
 function navigationToggle() {
@@ -14,6 +15,7 @@ function navigationToggle() {
     buttonOpen.classList.add("visually-hidden")
     buttonClose.classList.remove("visually-hidden")
     navigatioList.classList.remove("visually-hidden")
+    navigatioBlock.classList.remove("visually-hidden")
     logo.classList.add("logo-fixed")
   }
 
@@ -23,6 +25,7 @@ function navigationToggle() {
     buttonOpen.classList.remove("visually-hidden")
     buttonClose.classList.add("visually-hidden")
     navigatioList.classList.add("visually-hidden")
+    navigatioBlock.classList.add("visually-hidden")
     logo.classList.remove("logo-fixed")
   }
 }

@@ -1,0 +1,115 @@
+.tariffs-card {
+  position: relative;
+  margin-bottom: 40px;
+  padding: 16px 24px;
+  padding-bottom: 54px;
+  background: rgba(255 255 255 / 05%);
+  border-radius: 8px;
+  box-shadow: 0 0 2px rgba(255 255 255 / 90%);
+  backdrop-filter: blur(15px);
+}
+
+.tariffs-card::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 250px;
+  background-image: url("../img/tariffs-decor-1.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+  content: "";
+}
+
+.tariffs-card::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 230px;
+  height: 215px;
+  background-image: url("../img/tariffs-decor-2.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  content: "";
+}
+
+.tariffs-card__content {
+  z-index: 3;
+}
+
+.tariffs-card__title {
+  position: relative;
+  margin: 24px 0;
+  font-weight: 200;
+  font-size: 36px;
+  font-family: NotoSerifDisplay, "Times New Roman", Times, serif;
+  text-align: center;
+  text-shadow: 0 4px 5px rgba(0 0 0 / 4%);
+}
+
+.tariffs-card__arrow-icon {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  transform: rotate(90deg);
+}
+
+.tariffs-card__list {
+  z-index: 3;
+  height: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-indent: 16px;
+  text-shadow: 0 4px 5px rgba(0 0 0 / 4%);
+  transform: translateX(-12px);
+  opacity: 0;
+}
+
+.tariffs-card__list li {
+  z-index: 3;
+  margin-bottom: 24px;
+  list-style: none;
+}
+
+.tariffs-card__price {
+  margin: 16px 0;
+  color: $button-color;
+  font-weight: 400;
+  font-size: 36px;
+  font-family: NotoSerifDisplay, "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+.tariffs-card__1-open .tariffs-card__list {
+  height: 100%;
+  opacity: 1;
+  transition: 1s;
+}
+
+.tariffs-card__1-open .tariffs-card__arrow-icon {
+  transform: rotate(-90deg);
+}
+
+.tariffs-card__2-open .tariffs-card__list {
+  height: 100%;
+  opacity: 1;
+  transition: 1s;
+}
+
+.tariffs-card__2-open .tariffs-card__arrow-icon {
+  transform: rotate(-90deg);
+}
+
+.tariffs-card__3-open .tariffs-card__list {
+  height: 100%;
+  opacity: 1;
+  transition: 1s;
+}
+
+.tariffs-card__3-open .tariffs-card__arrow-icon {
+  transform: rotate(-90deg);
+}

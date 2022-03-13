@@ -46,6 +46,7 @@
   color: $button-color;
   font-size: 24px;
   font-family: var(--font-button);
+  font-family: NotoSerifDisplay, "Times New Roman", Times, serif;
   white-space: nowrap;
   text-decoration: none;
 }
@@ -91,9 +92,3 @@
   .button:active a {
   color: var(--color-button-active);
   }
-
-@media (max-width: $table-width) {
-  .button {
-    z-index: 1;
-  }
-}
