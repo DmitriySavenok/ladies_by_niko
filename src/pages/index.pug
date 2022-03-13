@@ -23,9 +23,9 @@ block content
         .navigation__block
           ul.navigation__list.visually-hidden
             li.navigation__item
-              a(class="navigation__link scrollto" href="#1") Главная
+              a(class="navigation__link scrollto" href="index.html") Главная
             li.navigation__item
-              a.navigation__link О курсе
+              a(class="navigation__link scrollto" href="#about-title") О курсе
             li.navigation__item
               a.navigation__link Тарифы
             li.navigation__item
@@ -50,19 +50,5 @@ block content
 
 block main
   main
-    .photo-scroll#photo-scroll
-      <picture>
-        <source srcset="img/photo/photo-main.webp" type="image/webp">
-        <source srcset="img/photo/photo-main.png" type="image/png">
-        <img class="photo-main", src="img/photo/photo-main.png", alt="Фото" data-scroll-speed="1">
-      </picture>
-    .container
-      h1.visually-hidden Ladies by Niko авторский курс хореографии в стиле high heels
-      .button-block
-        <div class="button">
-          <a href="#">
-          Often Купить
-          <span class="shift"></span>
-          </a>
-        <div class="mask"></div>
-        </div>
+    include ../blocks/first-screen/first-screen.pug
+    include ../blocks/about/about.pug
