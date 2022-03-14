@@ -115,6 +115,14 @@
 }
 
 @media (min-width: $table-width) {
+  .tariffs {
+    padding-bottom: 120px;
+    background-image: url("../img/photo/photo-tablet-tariffs-background.png");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 750px;
+  }
+
   .tariffs-card__arrow-icon {
     display: none;
   }
@@ -128,7 +136,7 @@
 
   .tariffs-card {
     position: relative;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     padding: 16px 24px;
     padding-bottom: 24px;
   }
