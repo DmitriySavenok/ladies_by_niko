@@ -30,3 +30,8 @@
 .contacts .navigation__item {
   margin-bottom: 24px;
 }
+
+.contacts .navigation__link {
+  display: inline;
+  color: $text-color;
+}

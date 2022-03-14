@@ -11,8 +11,9 @@ body {
   position: relative;
   color: $text-color;
   background: url("../img/background-mobile.jpg");
+  background-repeat: no-repeat;
   background-position: top center;
-  background-size: auto;
+  background-size: cover;
 }
 
 .section-title {

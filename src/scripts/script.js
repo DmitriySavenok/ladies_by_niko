@@ -1,23 +1,4 @@
-let isScroll = 0, // доп. проверка
-    targetScroll = 10; // расстояние до действия / в px
-
-var $width = $(window).width();
-
-$(window).on('scroll', function(){
-  if ($width > 760) {
-    if(isScroll === 0 && $(this).scrollTop() >= targetScroll) {
-      isScroll = 1;
-      $('.navigation').addClass('navigation-tablet-background');
-      console.info('change 1');
-    } else if(isScroll === 1 && $(this).scrollTop() < targetScroll) {
-      isScroll = 0;
-      $('.navigation').removeClass('navigation-tablet-background')
-      console.info('change 0');
-    }
-  }
-});
-
-// Горизонтальное смещение
+// Горизонтальное смещение фотографии на главном экране
 $.fn.moveIt = function(){
 	var $window = $(window);
 	var instances = [];
