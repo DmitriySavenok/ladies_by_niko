@@ -23,19 +23,16 @@
 }
 
 .navigation__block {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   padding-top: 40%;
 }
 
 .navigation__list {
-  height: 100%;
   padding: 0;
   text-align: center;
   list-style: none;
-  opacity: 1;
-  transition: 1s;
 }
 
 .navigation__item {
@@ -59,4 +56,20 @@
 
 .navigation__social-icon {
   margin-right: 11px;
+}
+
+.navigation__opened .button-open {
+  display: none;
+}
+
+.button-close {
+  display: none;
+}
+
+.navigation__opened .button-close {
+  display: inherit;
+}
+
+.navigation__opened .navigation__block {
+  display: flex;
 }
