@@ -113,3 +113,40 @@
 .tariffs-card__3-open .tariffs-card__arrow-icon {
   transform: rotate(-90deg);
 }
+
+@media (min-width: $table-width) {
+  .tariffs-card__arrow-icon {
+    display: none;
+  }
+
+  .tariffs__content {
+    display: grid;
+    grid-template-columns: 230px 230px 230px;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .tariffs-card {
+    position: relative;
+    margin-bottom: 0px;
+    padding: 16px 24px;
+    padding-bottom: 24px;
+  }
+
+  .tariffs-card::before {
+    width: 250px;
+    height: 250px;
+    background-size: 60%;
+  }
+
+  .tariffs-card::after {
+    width: 230px;
+    height: 215px;
+    background-size: 60%;
+  }
+
+  .tariffs-card__list {
+    height: 100%;
+    opacity: 1;
+  }
+}

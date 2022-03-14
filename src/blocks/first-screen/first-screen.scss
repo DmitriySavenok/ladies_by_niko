@@ -38,3 +38,22 @@
   transform: translateX(10px);
   transition: all 1s ease-out;
 }
+
+@media (min-width: $table-width) {
+  .logo {
+    position: absolute;
+    top: 90px;
+    width: 65%;
+  }
+
+  .photo-scroll {
+    height: 750px;
+  }
+
+  .photo-main {
+    position: absolute;
+    top: 25%;
+    left: 230px;
+    height: 540px;
+  }
+}

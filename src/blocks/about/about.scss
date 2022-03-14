@@ -30,3 +30,14 @@
   text-indent: 16px;
   text-shadow: 0 4px 5px rgba(0 0 0 / 4%);
 }
+
+@media (min-width: $table-width) {
+  .about {
+    padding: 100px 0;
+    padding-bottom: 130px;
+    background-image: url("../img/decoration-lines-tablet-1.png"), url("../img/decoration-lines-tablet-2.png");
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+    background-size: 80%;
+  }
+}
