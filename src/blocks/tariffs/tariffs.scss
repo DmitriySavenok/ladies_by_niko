@@ -114,6 +114,10 @@
   transform: rotate(-90deg);
 }
 
+.in-tablet-view {
+  display: none;
+}
+
 @media (min-width: $table-width) {
   .tariffs {
     padding-bottom: 120px;
@@ -121,6 +125,14 @@
     background-repeat: no-repeat;
     background-position: bottom left;
     background-size: 750px;
+  }
+
+  .in-tablet-view {
+    display: inline-block;
+  }
+
+  .in-tablet-hide {
+    display: none;
   }
 
   .tariffs-card__arrow-icon {
@@ -137,8 +149,12 @@
   .tariffs-card {
     position: relative;
     margin-bottom: 0;
-    padding: 16px 24px;
+    padding: 16px;
     padding-bottom: 24px;
+  }
+
+  .tariffs-card .button {
+    width: 140px;
   }
 
   .tariffs-card::before {
