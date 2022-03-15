@@ -28,9 +28,15 @@
   padding: 1rem;
   padding-top: 0.9rem;
   overflow: hidden;
+  color: $button-color;
+  font-size: 24px;
+  font-family: var(--font-button);
+  font-family: NotoSerifDisplay, "Times New Roman", Times, serif;
   letter-spacing: 0.2125rem;
+  white-space: nowrap;
   text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
   background-color: var(--bg-button);
   border: 0.125rem solid $button-color;
   border-radius: 4px;
@@ -40,15 +46,6 @@
     border 1s cubic-bezier(0.19, 1, 0.22, 1),
     color 0.6s cubic-bezier(0.19, 1, 0.22, 1);
   user-select: none;
-}
-
-.button a {
-  color: $button-color;
-  font-size: 24px;
-  font-family: var(--font-button);
-  font-family: NotoSerifDisplay, "Times New Roman", Times, serif;
-  white-space: nowrap;
-  text-decoration: none;
 }
 
 .button .mask {
@@ -67,28 +64,25 @@
 }
 
 .button:hover {
+  color: var(--bg-button-active);
   background-color: var(--bg-button-hover);
   border-color: var(--border-button-hover);
   box-shadow: var(--shadow-button-hover);
 }
 
-  .button:hover a {
-  color: var(--color-button-hover);
-  }
-
-  .button:hover .mask {
+.button:hover .mask {
   background-color: var(--bg-mask-hover);
   transform: translate3d(120%, -100px, 0) rotate3d(0, 0, 1, 90deg);
-  }
+}
 
-  .button:hover .shift {
+.button:hover .shift {
   transform: translateX(0.3125rem);
-  }
+}
 
-  .button:active {
+.button:active {
   background-color: var(--bg-button-active);
-  }
+}
 
-  .button:active a {
+.button:active a {
   color: var(--color-button-active);
-  }
+}
