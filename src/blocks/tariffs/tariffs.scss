@@ -174,3 +174,34 @@
     opacity: 1;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .tariffs__grid {
+    display: grid;
+    grid-template-columns: 823px;
+    align-items: center;
+    justify-content: flex-end;
+    background-image: url("../img/photo/photo-desktop-tariffs-background.png");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 65%;
+  }
+
+  .tariffs__content {
+    justify-content: space-between;
+  }
+
+  .tariffs {
+    background-image: none;
+  }
+}
+
+@media (min-width: 1366px) {
+  .tariffs__content {
+    padding-top: 100px;
+  }
+
+  .tariffs {
+    padding-bottom: 40px;
+  }
+}

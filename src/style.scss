@@ -8,7 +8,6 @@
 @import "blocks/button/button.scss";
 
 body {
-  position: relative;
   color: $text-color;
   background: url("../img/background-mobile.jpg");
   background-repeat: no-repeat;
@@ -39,8 +38,45 @@ body {
   padding: 0 20px;
 }
 
+.logo-block {
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: 60px;
+  left: 20px;
+  z-index: 2;
+  width: 80%;
+}
+
+.logo-fixed {
+  position: fixed;
+  z-index: 5;
+}
+
 @media (max-width: $mobile-width) {
   .contacts-link {
     display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    background: url("../img/background-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .logo-block {
+    position: relative;
+  }
+
+  .logo {
+    position: inherit;
+    top: 40px;
+    left: 0;
+    z-index: 2;
+    width: 610px;
   }
 }

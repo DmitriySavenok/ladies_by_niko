@@ -6,7 +6,8 @@ block vars
   - var bodyClass = 'index-page' //- Классы для body
 
 block content
-    img(class="logo", id="logo" src="img/logo.svg", alt="Логотип")
+    .container.logo-block
+      img(class="logo", id="logo" src="img/logo.svg", alt="Логотип")
     include ../blocks/navigation/navigation.pug
 block main
   main

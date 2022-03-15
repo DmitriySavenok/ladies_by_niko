@@ -2,19 +2,6 @@
   padding-bottom: 20px;
 }
 
-.logo {
-  position: absolute;
-  top: 60px;
-  left: 20px;
-  z-index: 2;
-  width: 80%;
-}
-
-.logo-fixed {
-  position: fixed;
-  z-index: 5;
-}
-
 .photo-scroll {
   position: relative;
   width: 100%;
@@ -27,6 +14,10 @@
   top: 22%;
   left: 100px;
   height: 410px;
+}
+
+.photo-main-desktop {
+  display: none;
 }
 
 .photo-position-to {
@@ -55,5 +46,42 @@
     top: 25%;
     left: 230px;
     height: 540px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-scroll {
+    position: relative;
+    height: 50vh;
+    overflow: visible;
+  }
+
+  .photo-main {
+    display: none;
+  }
+
+  .photo-main-desktop {
+    position: absolute;
+    top: -85%;
+    right: 2%;
+    display: inherit;
+    height: 720px;
+  }
+
+  .first-screen .button-block {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 1367px) {
+  .photo-scroll {
+    height: 32vh;
+  }
+
+  .photo-main-desktop {
+    top: -85%;
+    right: 10%;
+    height: 800px;
   }
 }

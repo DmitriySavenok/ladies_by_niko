@@ -46,6 +46,7 @@
 
 .navigation__link {
   color: white;
+  font-weight: 200;
   font-size: 36px;
   text-decoration: none;
   text-shadow: 0 4px 4px rgba(0 0 0 / 35%);
@@ -110,5 +111,47 @@
 
   .navigation__item {
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .navigation .container {
+    position: relative;
+  }
+
+  .navigation__block {
+    position: absolute;
+    top: 2vh;
+    right: auto;
+    bottom: auto;
+    left: 1;
+    z-index: 3;
+    transition: 1s;
+  }
+
+  .navigation-to-bottom {
+    top: 40vh;
+    transition: 1s;
+  }
+
+  .navigation__list {
+    display: block;
+    text-align: left;
+  }
+
+  .navigation__item {
+    margin-bottom: 20px;
+  }
+
+  .navigation__link {
+    color: $text-color;
+    font-weight: 200px;
+    font-size: 48px;
+    font-family: NotoSerifDisplay, "Times New Roman", Times, serif;
+
+    &:hover {
+      color: white;
+      transition: 1s ease;
+    }
   }
 }

@@ -41,3 +41,39 @@
     background-size: 80%;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .about {
+    margin-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 200px;
+    background-image: url("../img/decoration-lines-desktop-1.png"), url("../img/decoration-lines-desktop-2.png");
+    background-repeat: no-repeat;
+    background-position: top right, bottom right;
+    background-size: 85%;
+  }
+
+  .about__title {
+    margin-bottom: 120px;
+    visibility: hidden;
+  }
+
+  .about__grid {
+    display: grid;
+    grid-template-columns: 823px;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .tariffs__title {
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 1366px) {
+  .about {
+    margin-top: 50px;
+    padding-top: 50px;
+    background-size: 65%;
+  }
+}
