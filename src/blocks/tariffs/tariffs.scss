@@ -120,7 +120,7 @@
 
 @media (min-width: $table-width) {
   .tariffs {
-    padding-bottom: 160px;
+    padding-bottom: 190px;
     background-image: url("../img/photo/photo-tablet-tariffs-background.png");
     background-repeat: no-repeat;
     background-position: bottom left;
@@ -181,6 +181,7 @@
     grid-template-columns: 823px;
     align-items: center;
     justify-content: flex-end;
+    padding-bottom: 80px;
     background-image: url("../img/photo/photo-desktop-tariffs-background.png");
     background-repeat: no-repeat;
     background-position: bottom left;

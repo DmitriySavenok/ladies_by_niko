@@ -11,10 +11,10 @@ function navigationToggle() {
     body.classList.toggle("stop-scroll")
 }
 
-// Добавление класса со стилями для подложки навигации
 let isScroll = 0, // доп. проверка
     targetScroll = 10; // расстояние до действия / в px
 
+// Добавление класса со стилями для подложки навигации
 $(window).on('scroll', function(){
   if ($(window).width() > 760 && $(window).width() < 1200) {
     if(isScroll === 0 && $(this).scrollTop() >= targetScroll) {

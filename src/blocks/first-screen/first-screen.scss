@@ -25,6 +25,7 @@
 
 .stop-photo-scroll {
   position: fixed;
+  display: none;
 }
 
 .photo-main-desktop {
@@ -45,8 +46,8 @@
   .photo-main {
     position: absolute;
     top: 25%;
-    left: 230px;
     height: 540px;
+    transform: translateX(60px);
   }
 }
 
