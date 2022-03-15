@@ -15,6 +15,11 @@ body {
   background-size: cover;
 }
 
+.stop-scroll {
+  position: fixed;
+  overflow: hidden;
+}
+
 .section-title {
   font-weight: 200;
   font-size: 36px;

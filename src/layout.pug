@@ -16,6 +16,9 @@ html(lang="ru" class="page")
     //- Подключение минифицированного normalize файла со стилей
     link(rel="stylesheet", href="css/normalize.min.css")
 
+    //- Подключение минифицированного normalize файла со стилей
+    link(rel="stylesheet", href="css/animate.min.css")
+
     //- Подключение основного минифицировоного файла стилей
     link(rel="stylesheet", href="css/style.min.css")
 
@@ -43,6 +46,8 @@ body(class=bodyClass, id="body")
   script(src="js/navigation.min.js")
   script(src="js/button.min.js")
   script(src="js/tariffs.min.js")
+  <script src="js/wow.min.js"></script>
+  <script>new WOW().init();</script>
 
   //- Блок с подключением js файлов (при необходимости переопределяется)
   block scripts

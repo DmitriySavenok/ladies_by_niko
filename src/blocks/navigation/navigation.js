@@ -1,10 +1,14 @@
 // Открытие и закрытие меню на смартфонах
 var logo = document.getElementById("logo");
 var navigation = document.getElementById("navigation");
+var body = document.querySelector("body");
+var photo = document.querySelector(".photo-main");
 
 function navigationToggle() {
     navigation.classList.toggle("navigation__opened");
+    photo.classList.toggle("stop-photo-scroll");
     logo.classList.toggle("logo-fixed")
+    body.classList.toggle("stop-scroll")
 }
 
 // Добавление класса со стилями для подложки навигации
@@ -21,6 +25,15 @@ $(window).on('scroll', function(){
       isScroll = 0;
       $('.navigation').removeClass('navigation-tablet-background')
       console.info('change 0');
+    }
+  }
+  if ($(window).width() > 1224) {
+    if(isScroll === 0 && $(this).scrollTop() >= targetScroll) {
+      isScroll = 1;
+      $('.first-screen-button').addClass('button-hide');
+    } else if(isScroll === 1 && $(this).scrollTop() < targetScroll) {
+      isScroll = 0;
+      $('.first-screen-button').removeClass('button-hide')
     }
   }
 });
@@ -93,10 +106,11 @@ $(document).ready(function() {
   $('.navigation__block').removeClass('navigation-to-bottom');
   $('#navigation').removeClass('navigation__opened')
   $('#logo').removeClass('logo-fixed')
+  $('#body').removeClass('stop-scroll')
+  $(".photo-main").removeClass('stop-photo-scroll')
   if($(".navigation__block").hasClass("navigation-to-bottom"));{
     $('.navigation__block').removeClass('navigation-to-bottom');
   }
-
 
   destination = jQuery(elementClick).offset().top - 70;
   jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 1000);
