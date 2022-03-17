@@ -119,18 +119,8 @@
 }
 
 @media (min-width: $desktop-width) {
-  .navigation .container {
-    position: relative;
-  }
-
-  .navigation__block {
-    position: absolute;
-    top: -1vh;
-    right: auto;
-    bottom: auto;
-    left: 1;
-    z-index: 3;
-    transition: 1s;
+  .navigation {
+    top: 210px;
   }
 
   .navigation__list {
@@ -156,13 +146,16 @@
 }
 
 @media (min-width: 1440px) {
-  .navigation__block {
-    top: 3vh;
+  .navigation {
+    top: 230px;
+    bottom: auto;
+    transition: all 1s ease;
   }
 
   .navigation-to-bottom {
-    top: 27vh;
-    transition: 1s;
+    position: absolute;
+    top: auto;
+    bottom: 175px;
   }
 
   .tariffs-link-for-small-screen {
@@ -171,12 +164,5 @@
 
   .tariffs-link-for-wide-screen {
     display: block;
-  }
-}
-
-@media (min-width: 1920px) {
-  .navigation-to-bottom {
-    top: 40vh;
-    transition: 1s;
   }
 }
