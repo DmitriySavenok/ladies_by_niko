@@ -16,7 +16,7 @@ let isScroll = 0, // доп. проверка
 
 // Добавление класса со стилями для подложки навигации
 $(window).on('scroll', function(){
-  if ($(window).width() > 760 && $(window).width() < 1200) {
+  if ($(window).width() > 760 && $(window).width() < 1240) {
     if(isScroll === 0 && $(this).scrollTop() >= targetScroll) {
       isScroll = 1;
       $('.navigation').addClass('navigation-tablet-background');
@@ -42,7 +42,7 @@ $(window).on('scroll', function(){
 $(document).ready(function() {
   jQuery(".desktop-contact").click(function () {
     $('.navigation__block').removeClass('navigation-to-bottom');
-    if($(window).width() > 1400) {
+    if($(window).width() > 1440) {
       $('.navigation__block').addClass('navigation-to-bottom');
     }
   });
@@ -51,7 +51,7 @@ $(document).ready(function() {
 $(document).ready(function() {
   jQuery(".desktop-tariffs").click(function () {
     $('.navigation__block').removeClass('navigation-to-bottom');
-    if($(window).width() > 1400) {
+    if($(window).width() > 1366) {
       if($(".navigation__block").hasClass("navigation-to-bottom"));{
         $('.navigation__block').removeClass('navigation-to-bottom');
       }
@@ -61,7 +61,7 @@ $(document).ready(function() {
 
 // Смещение навигации при скроле до последнего элемента.
 $(document).ready(function() {
-  if ($(window).width() > 1400) {
+  if ($(window).width() > 1366) {
     $(document).ready(function(){
       var $element = $('.contacts');
       let counter = 0;
@@ -81,11 +81,13 @@ $(document).ready(function() {
   }
 });
 
+
+// Добавление смещения навигации вниз для Mac и FullHD
 $(window).on('scroll', function(){
   $('.navigation__block').removeClass('navigation-to-bottom');
   let isScroll1 = 0, // доп. проверка
     targetScroll1 = 10; // расстояние до действия / в px
-  if ($(window).width() > 1400) {
+  if ($(window).width() > 1366) {
     if(isScroll1 === 0 && $(this).scrollTop() <= targetScroll1) {
       isScroll1 = 1;
       if($(".navigation__block").hasClass("navigation-to-bottom"));{
@@ -103,7 +105,6 @@ $(document).ready(function() {
   jQuery(".scrollto").click(function () {
   elementClick = jQuery(this).attr("href")
 
-  $('.navigation__block').removeClass('navigation-to-bottom');
   $('#navigation').removeClass('navigation__opened')
   $('#logo').removeClass('logo-fixed')
   $('#body').removeClass('stop-scroll')

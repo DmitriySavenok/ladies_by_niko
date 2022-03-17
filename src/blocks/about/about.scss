@@ -77,3 +77,11 @@
     background-size: 65%;
   }
 }
+
+@media (min-width: 1920px) {
+  .about {
+    margin-top: 50px;
+    padding-top: 70px;
+    padding-bottom: 250px;
+  }
+}

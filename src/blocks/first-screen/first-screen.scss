@@ -54,7 +54,7 @@
 @media (min-width: $desktop-width) {
   .photo-scroll {
     position: relative;
-    height: 50vh;
+    height: 43vh;
     overflow: visible;
   }
 
@@ -64,7 +64,7 @@
 
   .photo-main-desktop {
     position: absolute;
-    top: -85%;
+    top: -95%;
     right: 2%;
     display: inherit;
     height: 720px;
@@ -76,7 +76,17 @@
   }
 }
 
-@media (min-width: 1367px) {
+@media (min-width: $mac-desktop-width) {
+  .photo-scroll {
+    height: 36vh;
+  }
+
+  .photo-main-desktop {
+    top: -70%;
+  }
+}
+
+@media (min-width: 1920px) {
   .photo-scroll {
     height: 32vh;
   }

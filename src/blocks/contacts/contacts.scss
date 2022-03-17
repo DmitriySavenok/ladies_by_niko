@@ -18,7 +18,7 @@
 }
 
 .docs-item {
-  margin-bottom: 16px;
+  margin-bottom: 14px;
   text-align: center;
 }
 
@@ -68,6 +68,10 @@
 @media (min-width: $desktop-width) {
   .contacts {
     margin-top: 150px;
+    background-image: url("../img/decoration-lines-desktop-contacts.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 55%;
   }
 
   .contacts__content {
@@ -116,14 +120,20 @@
   }
 
   .copyright-block {
-    grid-column: 2 / 3;
+    grid-column: 1 / 2;
   }
 
   .docs-item {
-    text-align: center;
+    text-align: left;
   }
 
   .copyright {
-    text-align: center;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1920px) {
+  .contacts {
+    background-size: 45%;
   }
 }

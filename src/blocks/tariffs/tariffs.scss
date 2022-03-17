@@ -181,10 +181,10 @@
     grid-template-columns: 823px;
     align-items: center;
     justify-content: flex-end;
-    padding-bottom: 80px;
+    padding-bottom: 180px;
     background-image: url("../img/photo/photo-desktop-tariffs-background.png");
     background-repeat: no-repeat;
-    background-position: bottom left;
+    background-position: bottom center;
     background-size: 65%;
   }
 
@@ -193,16 +193,7 @@
   }
 
   .tariffs {
-    background-image: none;
-  }
-}
-
-@media (min-width: 1366px) {
-  .tariffs__content {
-    padding-top: 100px;
-  }
-
-  .tariffs {
     padding-bottom: 40px;
+    background-image: none;
   }
 }
