@@ -52,7 +52,7 @@ $(document).ready(function() {
   jQuery(".desktop-tariffs").click(function () {
     $('#navigation').removeClass('navigation-to-bottom');
     if($(window).width() > 1366) {
-      if($("#navigation").hasClass("navigation-to-bottom"));{
+      if($("#navigation").hasClass('navigation-to-bottom'));{
         $('#navigation').removeClass('navigation-to-bottom');
       }
     }
@@ -84,13 +84,13 @@ $(document).ready(function() {
 
 // Добавление смещения навигации вниз для Mac и FullHD
 $(window).on('scroll', function(){
-  $('#navigation').removeClass('navigation-to-bottom');
+  $('#navigation').removeClass('navigation-to-bottom', 1000);
   let isScroll1 = 0, // доп. проверка
     targetScroll1 = 10; // расстояние до действия / в px
   if ($(window).width() > 1366) {
     if(isScroll1 === 0 && $(this).scrollTop() <= targetScroll1) {
       isScroll1 = 1;
-      if($("#navigation").hasClass("navigation-to-bottom"));{
+      if($("#navigation").hasClass("navigation-to-bottom")) {
         $('#navigation').removeClass('navigation-to-bottom');
       }
     } else if(isScroll1 === 1 && $(this).scrollTop() > targetScroll1) {
@@ -109,12 +109,13 @@ $(document).ready(function() {
   $('#logo').removeClass('logo-fixed')
   $('#body').removeClass('stop-scroll')
   $(".photo-main").removeClass('stop-photo-scroll')
-  if($("#navigation").hasClass("navigation-to-bottom"));{
+
+  if ($("#navigation").hasClass("navigation-to-bottom")) {
     $('#navigation').removeClass('navigation-to-bottom');
   }
 
   destination = jQuery(elementClick).offset().top - 70;
-  jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 1000);
+  jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination});
   return false;
   });
 });
