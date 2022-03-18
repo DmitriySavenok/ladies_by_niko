@@ -1,6 +1,6 @@
 .about {
   padding: 60px 0;
-  padding-bottom: 90px;
+  padding-bottom: 100px;
   background-image: url("../img/decoration-lines-mobile-1.png"), url("../img/decoration-lines-mobile-2.png");
   background-repeat: no-repeat;
   background-position: top left, bottom right;
@@ -34,7 +34,7 @@
 @media (min-width: $table-width) {
   .about {
     padding: 100px 0;
-    padding-bottom: 130px;
+    padding-bottom: 110px;
     background-image: url("../img/decoration-lines-tablet-1.png"), url("../img/decoration-lines-tablet-2.png");
     background-repeat: no-repeat;
     background-position: top left, bottom right;

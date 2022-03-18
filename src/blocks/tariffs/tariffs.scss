@@ -2,6 +2,10 @@
   z-index: 5;
 }
 
+.tariffs__title {
+  margin-top: 0;
+}
+
 .tariffs-card {
   position: relative;
   margin-bottom: 40px;
@@ -190,6 +194,11 @@
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: 65%;
+  }
+
+  .tariffs__title {
+    height: 0;
+    margin: 0;
   }
 
   .tariffs__content {
