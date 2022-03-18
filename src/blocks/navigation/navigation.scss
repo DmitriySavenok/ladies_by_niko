@@ -121,6 +121,15 @@
 @media (min-width: $desktop-width) {
   .navigation {
     top: 250px;
+    right: 50%;
+    display: inline-block;
+    width: auto;
+    transform: translateX(-375px);
+  }
+
+  .navigation-to-bottom {
+    top: auto;
+    bottom: 195px;
   }
 
   .navigation__list {
@@ -129,7 +138,7 @@
   }
 
   .navigation__item {
-    margin-bottom: 24px;
+    margin-bottom: 12px;
   }
 
   .navigation__link {
@@ -146,18 +155,6 @@
 }
 
 @media (min-width: 1440px) {
-  .navigation {
-    right: 50%;
-    display: inline-block;
-    width: auto;
-    transform: translateX(-375px);
-  }
-
-  .navigation-to-bottom {
-    top: auto;
-    bottom: 175px;
-  }
-
   .navigation__block {
     position: sticky;
   }

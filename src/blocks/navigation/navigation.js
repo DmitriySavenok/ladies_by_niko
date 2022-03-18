@@ -42,7 +42,7 @@ $(window).on('scroll', function(){
 $(document).ready(function() {
   jQuery(".desktop-contact").click(function () {
     $('#navigation').removeClass('navigation-to-bottom');
-    if($(window).width() > 1440) {
+    if($(window).width() > 1240) {
       $('#navigation').addClass('navigation-to-bottom');
     }
   });
@@ -51,7 +51,7 @@ $(document).ready(function() {
 $(document).ready(function() {
   jQuery(".desktop-tariffs").click(function () {
     $('#navigation').removeClass('navigation-to-bottom');
-    if($(window).width() > 1366) {
+    if($(window).width() > 1240) {
       if($("#navigation").hasClass('navigation-to-bottom'));{
         $('#navigation').removeClass('navigation-to-bottom');
       }
@@ -61,7 +61,7 @@ $(document).ready(function() {
 
 // Смещение навигации при скроле до последнего элемента.
 $(document).ready(function() {
-  if ($(window).width() > 1366) {
+  if ($(window).width() > 1240) {
     $(document).ready(function(){
       var $element = $('.contacts');
       let counter = 0;
@@ -84,10 +84,10 @@ $(document).ready(function() {
 
 // Добавление смещения навигации вниз для Mac и FullHD
 $(window).on('scroll', function(){
-  $('#navigation').removeClass('navigation-to-bottom', 1000);
+  $('#navigation').removeClass('navigation-to-bottom');
   let isScroll1 = 0, // доп. проверка
     targetScroll1 = 10; // расстояние до действия / в px
-  if ($(window).width() > 1366) {
+  if ($(window).width() > 1240) {
     if(isScroll1 === 0 && $(this).scrollTop() <= targetScroll1) {
       isScroll1 = 1;
       if($("#navigation").hasClass("navigation-to-bottom")) {
