@@ -48,12 +48,6 @@
   user-select: none;
 }
 
-.start-button {
-  width: auto;
-  color: $text-color;
-  border: 0.125rem solid $text-color;
-}
-
 .button-hide {
   opacity: 0;
   transition: opacity 0.5s ease;
@@ -83,6 +77,12 @@
 .button:active {
   color: var(--bg-body);
   background-color: var(--bg-button-active);
+}
+
+.start-button {
+  width: auto;
+  color: $text-color;
+  border: 0.125rem solid $text-color;
 }
 
 @media (min-width: $table-width) {

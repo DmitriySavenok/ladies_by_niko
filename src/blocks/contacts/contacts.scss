@@ -42,11 +42,6 @@
   font-size: 10px;
 }
 
-.tel-link {
-  color: $text-color;
-  text-decoration: none;
-}
-
 .contacts .navigation__item {
   z-index: 3;
   margin-right: 24px;
@@ -71,6 +66,11 @@
 
 .qr-code {
   display: none;
+}
+
+.tel-link {
+  color: $text-color;
+  text-decoration: none;
 }
 
 @media (max-width: $mobile-width) {
