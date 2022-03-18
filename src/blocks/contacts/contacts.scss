@@ -4,7 +4,6 @@
 
 .footer__contacts {
   margin: 0;
-  padding-bottom: 20px;
 }
 
 .copyright-block {
@@ -14,7 +13,7 @@
 
 .copyright {
   margin: 0;
-  font-size: 12px;
+  font-size: 10px;
   text-align: center;
 }
 
@@ -30,20 +29,21 @@
 }
 
 .contacts-inn {
-  line-height: 20px;
+  line-height: 16px;
 }
 
-.docs-item a {
+.docs__link {
   color: $text-color;
   font-size: 12px;
 }
 
 .docs-item p {
   margin: 0;
-  font-size: 12px;
+  font-size: 10px;
 }
 
 .tel-link {
+  color: $text-color;
   text-decoration: none;
 }
 
